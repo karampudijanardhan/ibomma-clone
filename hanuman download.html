@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black ;
+            height: 100vh;
+        }
+        header{
+            position: absolute;
+            width: 100%;
+            height: 120px;
+            border: 2px solid rgb(58, 56, 56);
+            background-color: black;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+
+        }
+        .menu{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border: 2px solid yellow;
+            background-color: rgb(239, 239, 15);
+            padding: 2px;
+            top: 30px;
+            left: 20px;
+        }
+        .logo{
+            height: 100vh;
+        }
+        .menu img{
+            position: relative;
+            width: 130px;
+            height: 100px;
+            bottom: 73px;
+            left: 600px;
+
+        }
+        .ser svg{
+            position: relative;
+            border: 2px solid yellow;
+            background-color: rgb(237, 237, 18);
+            left: 1200px;
+            bottom: 20px;
+            padding: 6px;
+        }
+        .imge img{
+            width: 210px;
+            position: relative;
+            top: 150px;
+            right: 180px;
+            border-radius: 10px;
+
+        }
+        .imge h2{
+            position: relative;
+            bottom: 170px;
+            right: 0px;
+            left: 50px;
+            color: #fff;
+        }
+        .year{
+            position: relative;
+            font-size: 1.5rem;
+            bottom: 150px;
+            right: 0px;
+            left: 50px;
+            color: #fff;
+        }
+        .type{
+            position: relative;
+            font-size: 1.2rem;
+            bottom: 130px;
+            right: 0px;
+            left: 50px;
+            color: #fff;
+        }
+        .cast{
+            position: relative;
+            font-size: 1.2rem;
+            bottom: 110px;
+            right:0px;
+            left: 50px;
+            color: #fff;
+        }
+        .dirct{
+            position: relative;
+            font-size: 1.2rem;
+            bottom: 90px;
+            right: 0px;
+            left: 50px;
+            color: #fff;
+        }
+        .but button{
+            width: 150px;
+            height: 40px;
+            position: relative;
+            right: 180px;
+            font-size: 1.2rem;
+            top: 50px;
+            color: #fff;
+            background-color: black;
+            border: 2px solid rgb(58, 56, 56);
+        }
+        .but button a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .bappam button{
+            position: relative;
+            width: 240px;
+            height: 40px;
+            font-size: 1.2rem;
+            left: 780px;
+            bottom: 6px;
+            border: 2px solid yellow;
+            background-color: rgb(241, 241, 13);
+            
+        }
+        .synopsis{
+            position: relative;
+            top: 100px;
+            right:200px;
+            color: #fff;
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="lago">
+        <header>
+            <div class="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+            <img src="images.png" alt="img">
+        </div>
+        <div class="ser">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"/></svg>
+        </div>
+        </header>
+        <div class="imge">
+            <a href=""><img src="download (13).jpeg"></a>
+            <h2>Hanu Man</h2>
+        </div>
+        <p class="year">2024</p>
+        <p class="type">Action/Adventure/Fantasy</p>
+        <p class="cast">Cast: Teja sajja.Amritha</p>
+        <p class="dirct">Direct: Prashanth Varam</p>
+        <div class="but">
+            <button type="button"><a href="https://youtu.be/Oqvly3MvlXA?si=O3cFVx6EUL856_gQ">TRAILER</a></button>
+        </div>
+        <div class="bappam" id="downdload">
+            <button type="button" onclick="myfun()">MOBILE DOWNLOAD</button>
+        </div>
+        <div class="synopsis">
+            <p>Synopis:In a dystopian future.political conflicts arise in India due to trade blockades by international forces.resulting in civil unrest<br><br>
+            Last World War The Freedom Fighters 2024 Telugu Movie Watch online kadaisi ulaga por Tamil dubbed </p>
+        </div>
+    </div>
+    <script>
+        function myfun(){
+       const btt=document.getElementById("downdload");
+       confirm("Downdloading file....See notification for download status")
+        }
+    </script>
+</body>
+</html>
